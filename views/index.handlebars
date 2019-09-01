@@ -1,0 +1,19 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="mx-auto">
+      <h3>Account Login</h3>
+
+      <form method="POST" action="/login">
+        <input type="text" class="form-control mb-5 mt-5" placeholder="Email" name="Email">
+        <input type="text" class="form-control mb-5" placeholder="Password" name="Password">
+
+        <button type="submit" class="btn btn-light">Sign in</button>
+      </form>
+    </div>
+    {{#if warningA}} <div class="alert alert-danger col-12 mt-5 text-center" role="alert">Email/password is
+      empty, or input wrong
+      Email/password
+    </div>
+    {{/if}}
+  </div>
+</div>
