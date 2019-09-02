@@ -25,9 +25,7 @@ app.post('/', (req, res) => {
 
   if (results !== undefined) {
     const firstName = results.firstName
-    res.send(`
-        <h1>Welcome back, ${firstName}</h1>
-      `)
+    res.render('login', { firstName })
   } else {
     const warningA = 'on'
     res.render('index', { warningA })
